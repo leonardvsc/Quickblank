@@ -1,5 +1,4 @@
-// Refatorando o código para garantir que esteja correto
-document.querySelectorAll("#link").forEach((data) => {
+document.querySelectorAll("#link").forEach(function (data) {
   data.addEventListener("click", (event) => {
     const dataHref = data.getAttribute("data-href");
 
@@ -14,7 +13,6 @@ document.querySelectorAll("#link").forEach((data) => {
         // Não faz nada caso não tenha nenhum data-href correspondente
         break;
     }
-
     event.preventDefault();
   });
 });
