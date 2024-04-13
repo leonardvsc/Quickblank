@@ -1,0 +1,240 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 5.5rem;
+
+  /*========== Colors ==========*/
+
+  --first-color: #f66b41;
+  --first-color-alt: #f66b41;
+  --title-color: #ffffff;
+  --text-color: #f3f2f2;
+  --text-color-light: #918a88;
+
+  --body-background-color: rgb(15 23 42/1);
+  --header-background-color: rgb(255, 255, 255);
+  --header-background-color-alt: rgb(30 41 59/1);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.25rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 800;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1152px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --bigger-font-size: 2rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*============= CSS REUSABLE CODE ============= */
+.max-container {
+  max-width: 1124px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.4rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 5rem;
+}
+
+.main {
+  overflow: hidden;
+  /* For animation ScrollReveal */
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-background-color);
+  color: var(--text-color);
+}
+
+input,
+textarea,
+button,
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =============== HEADER =============== */
+header {
+  background-color: var(--header-background-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 200px;
+}
+
+.nav__social {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__link {
+  font-size: 1.25rem;
+  color: var(--body-background-color);
+}
+
+/* =============== BANNER HOME =============== */
+.banner {
+  background-color: var(--header-background-color-alt);
+}
+
+.banner__title,
+.banner__subtitle {
+  text-align: center;
+  color: var(--title-color);
+}
+
+.banner__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.banner__subtitle {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.25rem;
+}
+
+/* =============== CARDS =============== */
+.cards-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  margin-top: 2.5rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: rgb(74 161 129/ 1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  cursor: pointer;
+  transition: box-shadow 0.4s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px #ffffff1a;
+}
+
+.card i {
+  color: var(--text-color);
+  font-size: 1.875rem;
+}
+
+.card p {
+  max-width: 75%;
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+}
+
+/* =============== MEDIA QUERIES =============== */
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .max-container {
+    padding: 0.75rem;
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 776px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1124px) {
+  .cards-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
