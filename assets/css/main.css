@@ -54,7 +54,7 @@
 
 /*============= CSS REUSABLE CODE ============= */
 .max-container {
-  max-width: 1124px;
+  max-width: 1152px;
   margin: 0 auto;
   padding: 0 1.4rem;
 }
@@ -210,6 +210,7 @@ header {
 .banner__subtitle {
   font-size: var(--h3-font-size);
   font-weight: var(--font-light);
+  line-height: 1.8rem;
   max-width: 900px;
   margin: auto;
 }
@@ -221,15 +222,15 @@ header {
   gap: 0.5rem;
 
   background-color: var(--title-color);
-  border-radius: 0.5rem;
-  padding: 1rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem 1rem;
   color: var(--body-background-color);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 
   max-width: 200px;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .banner__button i {
@@ -246,30 +247,43 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
-  background-color: rgb(74 161 129/ 1);
   border-radius: 0.5rem;
   padding: 1rem;
-
   cursor: pointer;
-  transition: box-shadow 0.4s;
+  position: relative;
+  background-color: var(--header-background-color);
 }
 
-.card:hover {
-  box-shadow: 0 8px 24px #ffffff1a;
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--header-background-color);
+  border-radius: 0.5rem;
+  opacity: 0.5;
+}
+
+.card:hover::before {
+  opacity: 0;
 }
 
 .card i {
   color: var(--text-color);
   font-size: 1.875rem;
+  z-index: 1;
 }
 
 .card p {
   max-width: 75%;
   color: var(--text-color);
   font-size: var(--normal-font-size);
+  z-index: 1;
 }
 
+/* ==== CARDS BACKGROUND COLORS ===== */
 .html-bg {
   background-color: #cc5534;
 }
@@ -315,7 +329,10 @@ header {
 }
 
 /* For large devices */
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1152px) {
+  .banner__subtitle {
+    line-height: 2.2rem;
+  }
   .cards-container {
     grid-template-columns: repeat(4, 1fr);
   }
