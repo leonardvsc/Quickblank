@@ -5,8 +5,16 @@ document.querySelectorAll("#link").forEach(function (data) {
 
     switch (dataHref) {
       /* HOME */
-      case "clickup":
-        window.open("https://app.clickup.com/", "_blank");
+      case "html":
+        window.open("https://quickref.me/html", "_blank");
+        break;
+
+      case "css":
+        window.open("https://quickref.me/css3", "_blank");
+        break;
+
+      case "javascript":
+        window.open("https://quickref.me/javascript", "_blank");
         break;
 
       /* PROGRAMMING */

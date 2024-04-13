@@ -10,6 +10,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- ======= BOXICONS ======= -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
   <body>
     <!-- ======= HEADER ======= -->
@@ -35,19 +37,45 @@
       <div class="max-container">
         <h1 class="banner__title">Quick_blank</h1>
         <p class="banner__subtitle">
-          Crie links raízes e compartilhe seus projetos com outros
-          desenvolvedores.
+          <strong>quickblank.vercel.app</strong> é um portal de links para
+          aprimorar suas habilidades em desenvolvimento web. Aqui você
+          encontrará uma seleção de roteiros, guias e outras orientações para
+          ajudar você a escolher o melhor caminho para seu aprendizado. Atualize
+          suas habilidades em HTML, CSS, JavaScript e muito mais.
         </p>
+        <a href="https://roadmap.sh/" target="_blank" class="banner__button"
+          ><i class="ri-mind-map"></i>Roadmap</a
+        >
       </div>
     </section>
 
-    <!-- ======= MAIN ======= -->
+    <!-- ======= MAIN CARDS ======= -->
     <main class="max-container">
-      <!-- =============== CARDS =============== -->
-      <section class="home">
+      <section class="home section-cards">
         <div class="cards-container grid">
+          <a data-href="html" id="link">
+            <div class="card html-bg">
+              <i class="ri-html5-fill"></i>
+              <p>HTML</p>
+            </div>
+          </a>
+
+          <a data-href="css" id="link">
+            <div class="card css-bg">
+              <i class="ri-css3-fill"></i>
+              <p>CSS</p>
+            </div>
+          </a>
+
+          <a data-href="javascript" id="link">
+            <div class="card javascript-bg">
+              <i class="ri-javascript-fill"></i>
+              <p>JavaScript</p>
+            </div>
+          </a>
+
           <a data-href="clickup" id="link">
-            <div class="card">
+            <div class="card clickup">
               <i class="ri-image-fill"></i>
               <p>ClickUP</p>
             </div>
@@ -55,13 +83,37 @@
         </div>
       </section>
 
-      <section class="programming section">
+      <section class="programming section-cards">
         <h2 class="section__title">Programming</h2>
         <div class="cards-container grid">
           <a data-href="quickref" id="link">
             <div class="card">
               <i class="ri-image-fill"></i>
               <p>QuickRef</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="ai section-cards">
+        <h2 class="section__title">Artificial Intelligences</h2>
+        <div class="cards-container grid">
+          <a data-href="" id="link">
+            <div class="card">
+              <i class="ri-image-fill"></i>
+              <p>Lorem Ipsum</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="toolkit section-cards">
+        <h2 class="section__title">Toolkit</h2>
+        <div class="cards-container grid">
+          <a data-href="" id="link">
+            <div class="card">
+              <i class="ri-image-fill"></i>
+              <p>Lorem Ipsum</p>
             </div>
           </a>
         </div>
