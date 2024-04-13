@@ -26,10 +26,6 @@ document.querySelectorAll("#link").forEach(function (data) {
         break;
 
       /* PROGRAMMING */
-      case "quickref":
-        window.open("https://quickref.me/", "_blank");
-        break;
-
       case "devresources":
         window.open("https://devresourc.es/", "_blank");
         break;
