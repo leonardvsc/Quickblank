@@ -137,6 +137,11 @@ svg {
   height: auto;
 }
 
+/* =============== MAIN ============== */
+main {
+  margin-bottom: 5rem;
+}
+
 /* =============== HEADER =============== */
 header {
   height: var(--header-height);
@@ -250,8 +255,13 @@ header {
   gap: 1.5rem;
 }
 
+.cards-container > a {
+  display: flex;
+}
+
 .card {
   display: flex;
+  flex: 1;
   align-items: center;
   gap: 0.5rem;
   border-radius: 0.5rem;
@@ -277,7 +287,8 @@ header {
   opacity: 0;
 }
 
-.card i {
+.card i,
+.card svg {
   color: var(--text-color);
   font-size: 1.875rem;
   z-index: 1;
@@ -293,16 +304,16 @@ header {
 /* ==== CARDS BACKGROUND COLORS ===== */
 
 .html-bg {
-  background-color: #cc5534;
+  background-image: linear-gradient(to right, #962a0d, #cc5534);
 }
 .css-bg {
-  background-color: #3473b5;
+  background-image: linear-gradient(to right, #003e81, #3473b5);
 }
 .javascript-bg {
-  background-color: #ebd94e;
+  background-image: linear-gradient(to right, #978600, #ebd94e);
 }
-.react-bg {
-  background-color: #61dbfb;
+.mongodb-bg {
+  background-image: linear-gradient(to right, #14532c, #4ade80);
 }
 .quickref-bg {
   background-color: #39a685;
@@ -311,6 +322,20 @@ header {
 /* =============== MEDIA QUERIES =============== */
 /* For small devices */
 @media screen and (max-width: 340px) {
+  .banner__title {
+    font-size: 1.5rem;
+  }
+
+  .banner__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner__buttons :nth-child(n + 2) {
+    /* Seleciona a partir do segundo filho */
+    margin-top: 0;
+  }
+
   .max-container {
     padding: 0.75rem;
   }
