@@ -8,7 +8,7 @@
   --first-color-alt: #f66b41;
   --title-color: rgb(203 213 225/ 1);
   --text-color: #f3f2f2;
-  --text-color-light: #858585;
+  --text-color-light: rgb(100 116 139 /1);
 
   --body-background-color: #0f172a;
   --header-background-color: #1e293b;
@@ -326,7 +326,6 @@ header {
 footer {
   background-color: var(--header-background-color);
   margin-top: 5rem;
-  text-align: center;
 }
 
 .footer__content {
@@ -346,6 +345,8 @@ footer {
 .footer__info {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 2rem;
 }
 
@@ -354,8 +355,13 @@ footer {
   max-width: 300px;
 }
 
+.footer__text {
+  color: var(--text-color-light);
+}
+
 .copy {
   width: 100%;
+  text-align: center;
   padding: 1rem 0;
   border-top: 1px solid var(--text-color-light);
 }
