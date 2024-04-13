@@ -21,6 +21,10 @@ document.querySelectorAll("#link").forEach(function (data) {
       case "quickref":
         window.open("https://quickref.me/", "_blank");
         break;
+
+      case "mongodb":
+        window.open("https://quickref.me/mongodb", "_blank");
+        break;
       default:
         // Não faz nada caso não tenha nenhum data-href correspondente
         break;
