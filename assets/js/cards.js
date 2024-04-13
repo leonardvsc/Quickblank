@@ -34,6 +34,7 @@ document.querySelectorAll("#link").forEach(function (data) {
         // Não faz nada caso não tenha nenhum data-href correspondente
         break;
     }
+
     event.preventDefault();
   });
 });
