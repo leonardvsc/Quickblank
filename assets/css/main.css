@@ -223,7 +223,7 @@ header {
 
   background-color: var(--title-color);
   border-radius: 0.4rem;
-  padding: 0.2rem 1rem;
+  padding: 0.6rem 1rem;
   color: var(--body-background-color);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
