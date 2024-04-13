@@ -17,14 +17,19 @@ document.querySelectorAll("#link").forEach(function (data) {
         window.open("https://quickref.me/javascript", "_blank");
         break;
 
-      /* PROGRAMMING */
-      case "quickref":
-        window.open("https://quickref.me/", "_blank");
+      case "es6":
+        window.open("https://quickref.me/es6", "_blank");
         break;
 
       case "mongodb":
         window.open("https://quickref.me/mongodb", "_blank");
         break;
+
+      /* PROGRAMMING */
+      case "quickref":
+        window.open("https://quickref.me/", "_blank");
+        break;
+
       default:
         // Não faz nada caso não tenha nenhum data-href correspondente
         break;
