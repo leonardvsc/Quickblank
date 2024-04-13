@@ -311,8 +311,18 @@ header {
 .mongodb-bg {
   background-image: linear-gradient(to right, #14532c, #4ade80);
 }
+
+/* Programming */
 .quickref-bg {
-  background-image: linear-gradient(to right, #096900, #12da00);
+  background-color: #12da00;
+}
+.devresources-bg {
+  background-color: #003e81;
+}
+
+/* Artificial Intelligences */
+.chatgpt-bg {
+  background-color: rgb(74 161 129 / 1);
 }
 
 /* =============== FOOTER =============== */

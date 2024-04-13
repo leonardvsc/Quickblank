@@ -30,6 +30,15 @@ document.querySelectorAll("#link").forEach(function (data) {
         window.open("https://quickref.me/", "_blank");
         break;
 
+      case "devresources":
+        window.open("https://devresourc.es/", "_blank");
+        break;
+
+      /* ARTIFICIAL INTELLIGENCE */
+      case "chatgpt":
+        window.open("https://chat.openai.com/", "_blank");
+        break;
+
       default:
         // Não faz nada caso não tenha nenhum data-href correspondente
         break;
