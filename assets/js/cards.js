@@ -35,6 +35,8 @@ document.querySelectorAll("#link").forEach(function (data) {
         window.open("https://chat.openai.com/", "_blank");
         break;
 
+      /* TOOLKIT */
+
       default:
         // Não faz nada caso não tenha nenhum data-href correspondente
         break;

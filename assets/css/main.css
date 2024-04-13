@@ -346,6 +346,7 @@ footer {
 .footer__info {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .footer__logo {
@@ -359,7 +360,8 @@ footer {
   border-top: 1px solid var(--text-color-light);
 }
 
-.footer__text-copy {
+.footer__text-copy,
+.footer__text-copy a {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
