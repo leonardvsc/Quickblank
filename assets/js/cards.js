@@ -3,7 +3,7 @@ document.querySelectorAll("#link").forEach(function (data) {
     const dataHref = data.getAttribute("data-href");
 
     switch (dataHref) {
-      case "chatgpt":
+      case "clickup":
         window.open("https://chat.openai.com/", "_blank");
         break;
       case "quickref":
