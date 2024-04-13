@@ -45,7 +45,7 @@
     --bigger-font-size: 2rem;
     --h1-font-size: 3rem;
     --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
+    --h3-font-size: 1.2rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
@@ -201,35 +201,42 @@ header {
 
 .banner__title {
   font-size: var(--h1-font-size);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-semi-bold);
   letter-spacing: 1px;
 
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .banner__subtitle {
   font-size: var(--h3-font-size);
   font-weight: var(--font-light);
-  line-height: 1.8rem;
+  line-height: 1.6rem;
   max-width: 900px;
   margin: auto;
 }
 
+.banner__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
 .banner__button {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 
-  background-color: var(--title-color);
-  border-radius: 0.4rem;
-  padding: 0.6rem 1rem;
   color: var(--body-background-color);
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  background-color: var(--title-color);
 
-  max-width: 200px;
-  margin: auto;
+  border-radius: 0.4rem;
+  padding: 0.6rem 2rem;
+
   margin-top: 2.5rem;
 }
 
@@ -284,20 +291,21 @@ header {
 }
 
 /* ==== CARDS BACKGROUND COLORS ===== */
+
 .html-bg {
   background-color: #cc5534;
 }
-
 .css-bg {
   background-color: #3473b5;
 }
-
 .javascript-bg {
   background-color: #ebd94e;
 }
-
 .react-bg {
   background-color: #61dbfb;
+}
+.quickref-bg {
+  background-color: #39a685;
 }
 
 /* =============== MEDIA QUERIES =============== */
@@ -322,6 +330,9 @@ header {
 
 /* For medium devices */
 @media screen and (min-width: 776px) {
+  .banner__buttons {
+    gap: 2rem;
+  }
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
