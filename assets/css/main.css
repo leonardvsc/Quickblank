@@ -200,8 +200,6 @@ header {
 .banner__title {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
-  letter-spacing: 1px;
-
   margin-bottom: 0.6rem;
 }
 
