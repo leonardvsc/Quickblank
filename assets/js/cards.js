@@ -34,6 +34,9 @@ document.querySelectorAll("#link").forEach(function (data) {
       case "chatgpt":
         window.open("https://chat.openai.com/", "_blank");
         break;
+      case "bingcopilot":
+        window.open("https://www.bing.com/chat", "_blank");
+        break;
 
       /* TOOLKIT */
 

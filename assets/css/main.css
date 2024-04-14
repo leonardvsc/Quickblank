@@ -281,9 +281,11 @@ header {
 }
 
 .card i,
-.card svg {
+.card svg,
+.card img {
   color: var(--text-color);
   font-size: 1.875rem;
+  width: 1.8rem;
   z-index: 1;
 }
 
@@ -295,6 +297,10 @@ header {
 }
 
 /* ==== CARDS BACKGROUND COLORS ===== */
+
+.default-bg {
+  background-color: #51388c;
+}
 
 .html-bg {
   background-image: linear-gradient(to right, #962a0d, #cc5534);
