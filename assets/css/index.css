@@ -203,11 +203,6 @@ svg {
   gap: 0.5rem;
 }
 
-.textfield > label {
-  width: 100%;
-  color: var(--text-color);
-}
-
 .textfield > input {
   width: 100%;
   padding: 10px;
