@@ -1,15 +1,20 @@
+const users = {
+  quick: "quickpass",
+};
+
 function logar(event) {
   let userLogin = document.getElementById("usuario").value;
   let senhaLogin = document.getElementById("senha").value;
 
   if (userLogin === "" || senhaLogin === "") {
-    alert("Preencha todos os campos!"); // Exiba uma mensagem de erro caso os campos estejam vazios
+    alert("Preencha todos os campos!");
     return;
   }
 
-  if (userLogin === "quick" && senhaLogin === "quickpass") {
-    location.href = "main.html"; // Redirecione para a página main.html
+  if (users[userLogin] === senhaLogin) {
+    sessionStorage.setItem("loggedUser", userLogin);
+    location.href = "main.html";
   } else {
-    alert("Usuário ou senha incorreto!"); // Exiba uma mensagem de erro caso as credenciais estejam incorretas
+    alert("Usuário ou senha incorreto!");
   }
 }
