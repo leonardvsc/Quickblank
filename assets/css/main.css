@@ -141,7 +141,8 @@ svg {
 header {
   height: var(--header-height);
   background-color: var(--header-background-color);
-  align-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
