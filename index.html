@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quick_blank - Daqui para os melhores</title>
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <link
       rel="shortcut icon"
       href="./assets/img/favicon.png"
@@ -19,45 +19,166 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
   <body>
-    <div class="main-login">
-      <div class="left-login">
-        <img src="./assets/img/logo.png" alt="Logo" />
-        <h1>
-          Referências rápidas<br />
-          e dicas para o sucesso<br />
-          nos seus estudos<br />
-          e projetos.
-        </h1>
-      </div>
+    <!-- ======= HEADER ======= -->
+    <header>
+      <nav class="nav max-container">
+        <a href="#" class="nav__logo">
+          <img src="./assets/img/logo.png" alt="Logo" />
+        </a>
+        <div class="nav__social">
+          <a href="#" class="nav__link instagram-bg-color">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="#" class="nav__link x-bg-color">
+            <i class="ri-twitter-x-line"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
 
-      <div class="right-login">
-        <form class="card-login">
-          <h1>LOGIN</h1>
-          <div class="textfield">
-            <input
-              type="text"
-              name="usuario"
-              id="usuario"
-              placeholder="Usuario"
-            />
-          </div>
-          <div class="textfield">
-            <input
-              type="password"
-              name="senha"
-              id="senha"
-              placeholder="Senha"
-            />
-          </div>
-          <input
-            type="submit"
-            class="button"
-            value="Entrar"
-            onclick="logar(); return false;"
-          />
-        </form>
+    <!-- ======= BANNER ======= -->
+    <div class="banner section">
+      <div class="max-container">
+        <h1 class="banner__title">Trilhando o caminho do conhecimento!</h1>
+        <p class="banner__subtitle">
+          Siga o caminho para o sucesso nos seus estudos e projetos.
+        </p>
+
+        <div class="banner__buttons">
+          <a
+            href="https://app.clickup.com/"
+            target="_blank"
+            class="banner__button"
+            ><i class="ri-home-gear-line"></i>ClickUp</a
+          >
+          <a href="https://roadmap.sh/" target="_blank" class="banner__button"
+            ><i class="ri-mind-map"></i>Roadmap</a
+          >
+        </div>
       </div>
     </div>
-    <script src="./assets/js/login.js"></script>
+
+    <!-- ======= MAIN CARDS ======= -->
+    <main class="max-container">
+      <section class="cheatsheets section-cards">
+        <h2 class="section__title">Cheatsheets</h2>
+        <div class="cards-container grid">
+          <a data-href="html" id="link">
+            <div class="card html-bg">
+              <i class="ri-html5-fill"></i>
+              <p>HTML</p>
+            </div>
+          </a>
+
+          <a data-href="css" id="link">
+            <div class="card css-bg">
+              <i class="ri-css3-fill"></i>
+              <p>CSS</p>
+            </div>
+          </a>
+
+          <a data-href="javascript" id="link">
+            <div class="card javascript-bg">
+              <i class="ri-javascript-fill"></i>
+              <p>JavaScript</p>
+            </div>
+          </a>
+
+          <a data-href="es6" id="link">
+            <div class="card es6-bg">
+              <svg
+                viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                height="1.6rem"
+                width="1.6rem"
+              >
+                <path
+                  d="M821.375 500.75c-16.875-11.25-33.75-16.875-56.25-11.25000001-22.50000001 0-33.75 11.25-45 28.12500001-11.25 16.875-11.25 33.75-11.25 56.25s5.625 33.75 22.5 50.62499999c11.25 11.25 28.125 22.50000001 50.625 22.50000001s39.375-5.625 50.625-22.50000001c11.25-11.25 16.875-33.75 16.87500001-61.87499999 0-33.75-5.625-50.625-28.12500001-61.875z"
+                ></path>
+                <path
+                  d="M62 62v900h900V62H62zm292.50000001 618.75H140.75V326.375H343.25v39.375H191.375v106.875h140.625V512H191.375v123.75h163.12500001v45zm230.62499999-22.5c-16.875 16.875-45 22.50000001-78.75 22.5-33.75 0-61.875-11.25-78.75-28.125-22.50000001-16.875-28.125-39.375-28.12500001-67.5V568.25h45v11.25000001c0 22.50000001 5.625 33.75 16.87500001 45 11.25 11.25 28.125 16.875 45 16.87499999 22.50000001 0 39.375-5.625 50.625-16.87499999 5.625-11.25 11.25-22.50000001 11.25-39.37500001 0-11.25-5.625-28.125-16.875-39.375-11.25-11.25-28.125-22.50000001-50.625-28.125-33.75-11.25-56.25-28.125-73.125-39.375-16.875-16.875-22.50000001-39.375-22.5-56.25 0-28.125 11.25-50.625 28.125-67.50000001 22.50000001-22.50000001 45-28.125 73.125-28.12499999 33.75 0 61.875 11.25 78.75 33.75 11.25 16.875 22.50000001 39.375 22.5 61.875h-45c0-16.875 0-28.125-11.25-39.375-11.25-11.25-28.125-16.875-45-16.875-16.875 0-28.125 5.625-39.375 11.25-11.25 11.25-11.25 22.50000001-11.25 39.375 0 11.25 0 22.50000001 11.25 28.12499999 5.625 11.25 28.125 16.875 56.25 33.75000001 28.125 11.25 50.625 28.125 67.5 45 16.875 16.875 22.50000001 39.375 22.5 56.24999999 5.625 33.75-5.625 56.25-28.125 78.75000001zm298.125-45c-5.625 16.875-16.875 33.75-33.75000001 50.625-16.875 16.875-39.375 22.50000001-67.49999999 22.5s-50.625-5.625-73.125-16.87499999c-22.50000001-11.25-33.75-28.125-39.37500001-50.62500001-5.625-22.50000001-11.25-39.375-11.24999999-61.875 0-22.50000001 5.625-33.75 11.24999999-50.625 11.25-11.25 22.50000001-28.125 33.75000001-50.625l84.375-129.375h45l-84.375 135c39.375-11.25 67.50000001-5.625 90 5.625 22.50000001 11.25 33.75 28.125 45 39.375 5.625 16.875 11.25 33.75 11.24999999 50.625 0 16.875 0 39.375-11.24999999 56.25z"
+                ></path>
+              </svg>
+              <p>ES6</p>
+            </div>
+          </a>
+
+          <a data-href="mongodb" id="link">
+            <div class="card mongodb-bg">
+              <i class="ri-database-2-fill"></i>
+              <p>MongoDB</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="programming section-cards">
+        <h2 class="section__title">Programming</h2>
+        <div class="cards-container grid">
+          <a data-href="devresources" id="link">
+            <div class="card devresources-bg">
+              <i class="ri-code-box-fill"></i>
+              <p>Dev Resources</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="ai section-cards">
+        <h2 class="section__title">Artificial Intelligences</h2>
+        <div class="cards-container grid">
+          <a data-href="chatgpt" id="link">
+            <div class="card chatgpt-bg">
+              <i class="ri-openai-fill"></i>
+              <p>ChatGPT</p>
+            </div>
+          </a>
+
+          <a data-href="bingcopilot" id="link">
+            <div class="card default-bg">
+              <img src="./assets/img/img_cards/copilot.png" alt="Copilot" />
+              <p>Copilot</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="toolkit section-cards">
+        <h2 class="section__title">Toolkit</h2>
+        <div class="cards-container grid">
+          <a data-href="" id="link">
+            <div class="card">
+              <i class="ri-image-fill"></i>
+              <p>Lorem Ipsum</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======= FOOTER ======= -->
+    <footer>
+      <div class="max-container">
+        <div class="footer__content">
+          <div class="footer__data"></div>
+          <div class="footer__info">
+            <img class="footer__logo" src="./assets/img/logo.png" alt="Logo" />
+            <p class="footer__text">
+              Referências rápidas e dicas para o sucesso nos seus estudos e
+              projetos.
+            </p>
+          </div>
+
+          <div class="copy">
+            <p class="footer__text-copy">
+              Copyright © 2024
+              <a href="https://leonardovictor.vercel.app">Leonardo Victor</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/cards.js"></script>
   </body>
 </html>
