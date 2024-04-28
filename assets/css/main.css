@@ -307,8 +307,7 @@ header {
 .card__description {
   color: var(--text-color);
   font-size: var(--smaller-font-size);
-  box-shadow: 0px -5px 5px -5px rgba(255, 255, 255, 0.5);
-  margin-top: 0.3rem;
+  border-top: 1px solid var(--text-color-alt);
   padding-top: 0.3rem;
   font-style: italic;
   letter-spacing: 0.02rem;
@@ -345,6 +344,14 @@ header {
 /* Artificial Intelligences */
 .chatgpt-bg {
   background-color: rgb(74 161 129 / 1);
+}
+
+.blackbox-bg {
+  background-color: #18181a;
+}
+
+.aicolors-bg {
+  background-color: #cc44a2;
 }
 
 /* =============== FOOTER =============== */
