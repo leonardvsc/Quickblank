@@ -301,24 +301,11 @@ header {
   max-width: 75%;
   color: var(--text-color);
   font-size: var(--normal-font-size);
-  z-index: 1;
-}
-
-.card__description {
-  color: var(--text-color);
-  font-size: var(--smaller-font-size);
-  border-top: 1px solid var(--text-color-alt);
-  padding-top: 0.3rem;
-  font-style: italic;
-  letter-spacing: 0.02rem;
+  font-weight: var(--font-medium);
   z-index: 1;
 }
 
 /* ==== CARDS BACKGROUND COLORS ===== */
-
-.default-bg {
-  background-color: #51388c;
-}
 
 .html-bg {
   background-image: linear-gradient(to right, #962a0d, #d66800);
@@ -336,14 +323,13 @@ header {
   background-image: linear-gradient(to right, #14532c, #4ade80);
 }
 
-/* Programming */
-.devresources-bg {
-  background-color: #003e81;
-}
-
 /* Artificial Intelligences */
 .chatgpt-bg {
   background-color: rgb(74 161 129 / 1);
+}
+
+.copilot-bg {
+  background-color: #51388c;
 }
 
 .blackbox-bg {
@@ -352,6 +338,11 @@ header {
 
 .aicolors-bg {
   background-color: #cc44a2;
+}
+
+/* Programming */
+.devresources-bg {
+  background-color: #003e81;
 }
 
 /* =============== FOOTER =============== */
