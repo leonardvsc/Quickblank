@@ -191,7 +191,30 @@ header {
 
 /* =============== BANNER =============== */
 .banner {
-  background-color: var(--header-background-color);
+  position: relative;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.199);
+}
+
+.framer__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.framer__video video {
+  cursor: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0.2;
+}
+
+.banner__content {
+  position: relative;
+  z-index: 1;
 }
 
 .banner__title,
