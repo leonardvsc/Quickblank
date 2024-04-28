@@ -7,7 +7,8 @@
   --first-color: #f66b41;
   --first-color-alt: #f66b41;
   --title-color: rgb(203 213 225/ 1);
-  --text-color: #f3f2f2;
+  --text-color: #ffffff;
+  --text-color-alt: #dddddd;
   --text-color-light: rgb(100 116 139 /1);
 
   --body-background-color: #0f172a;
@@ -254,14 +255,20 @@ header {
 
 .card {
   display: flex;
+  flex-direction: column;
   flex: 1;
-  align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   border-radius: 0.5rem;
   padding: 1rem;
   cursor: pointer;
   position: relative;
   background-color: var(--header-background-color);
+}
+
+.card > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .card::before {
@@ -274,6 +281,7 @@ header {
   background-color: var(--header-background-color);
   border-radius: 0.5rem;
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .card:hover::before {
@@ -289,10 +297,19 @@ header {
   z-index: 1;
 }
 
-.card p {
+.card__name p {
   max-width: 75%;
   color: var(--text-color);
   font-size: var(--normal-font-size);
+  z-index: 1;
+}
+
+.card__description {
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  box-shadow: 0px -5px 5px -5px rgba(0, 0, 0, 0.5);
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
   z-index: 1;
 }
 
@@ -303,16 +320,16 @@ header {
 }
 
 .html-bg {
-  background-image: linear-gradient(to right, #962a0d, #cc5534);
+  background-image: linear-gradient(to right, #962a0d, #d66800);
 }
 .css-bg {
-  background-image: linear-gradient(to right, #003e81, #3473b5);
+  background-image: linear-gradient(to right, #003e81, #069db8);
 }
 .javascript-bg {
-  background-image: linear-gradient(to right, #978600, #ebd94e);
+  background-image: linear-gradient(to right, #978600, #d1b900);
 }
 .es6-bg {
-  background-image: linear-gradient(to right, #6b056b, #901494);
+  background-image: linear-gradient(to right, #6b056b, #b300b9);
 }
 .mongodb-bg {
   background-image: linear-gradient(to right, #14532c, #4ade80);
