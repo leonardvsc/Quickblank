@@ -359,17 +359,34 @@ header {
   background-color: #18181a;
 }
 
+.aicolors-bg {
+  background-color: #cc44a2;
+}
+
 .logoai-bg {
   background-color: #275cbe;
 }
 
-.aicolors-bg {
-  background-color: #cc44a2;
+.namelix-bg {
+  background-color: #2b36cf;
+}
+
+.murfai-bg {
+  background-color: #af8c00;
 }
 
 /* Programming */
 .devresources-bg {
   background-color: #003e81;
+}
+
+/* Toolkit */
+.tailwindwoolbox-bg {
+  background-color: #438281;
+}
+
+.tailgrids-bg {
+  background-color: #1d38af;
 }
 
 /* =============== FOOTER =============== */
