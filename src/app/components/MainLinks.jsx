@@ -98,7 +98,7 @@ const toolkit = [
   {
     name: "Whatsapp Link",
     href: "https://api.chatpro.com.br/gerador-de-links",
-    bgColor: "#25f566",
+    bgColor: "#106359",
   },
 ];
 
