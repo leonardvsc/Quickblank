@@ -34,8 +34,13 @@ const ai = [
     bgColor: "rgb(74 161 129 / 1)",
   },
   {
+    name: "Claude AI",
+    href: "https://claude.ai/",
+    bgColor: "#2c2b27",
+  },
+  {
     name: "Copilot",
-    href: "https://www.bing.com/chat",
+    href: "https://copilot.microsoft.com/",
     bgColor: "#51388c",
   },
   {
