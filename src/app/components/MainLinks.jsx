@@ -65,6 +65,20 @@ const ai = [
   },
 ];
 
+const cloudDevelopment = [
+  {
+    name: "CodeSandbox",
+    href: "https://codesandbox.io/templates",
+    bgColor: "#ddff50",
+    textColor: "#000000",
+  },
+  {
+    name: "StackBlitz",
+    href: "https://stackblitz.com/",
+    bgColor: "#1575f0",
+  },
+];
+
 const programming = [
   {
     name: "Dev Resources",
@@ -112,8 +126,8 @@ function TitleMainLinks({ title }) {
 }
 
 function ButtonLink({ name, href, textColor, bgColor }) {
-  const defaltTextColor = "#ffffff";
   const defaultBgColor = "#333333";
+  const defaltTextColor = "#ffffff";
   return (
     <Link
       href={href}
@@ -167,11 +181,34 @@ export function MainLinks() {
 
       <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-12">
         <div id="programming" className="pt-8">
+          <TitleMainLinks title="Cloud Development" />
+        </div>
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
+          {cloudDevelopment.map(({ name, href, bgColor, textColor }) => (
+            <ButtonLink
+              key={name}
+              name={name}
+              href={href}
+              bgColor={bgColor}
+              textColor={textColor}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-12">
+        <div id="programming" className="pt-8">
           <TitleMainLinks title="Programming" />
         </div>
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
-          {programming.map(({ name, href, bgColor }) => (
-            <ButtonLink key={name} name={name} href={href} bgColor={bgColor} />
+          {programming.map(({ name, href, bgColor, textColor }) => (
+            <ButtonLink
+              key={name}
+              name={name}
+              href={href}
+              bgColor={bgColor}
+              textColor={textColor}
+            />
           ))}
         </div>
       </div>
