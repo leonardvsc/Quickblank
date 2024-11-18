@@ -27,6 +27,29 @@ const cheatsheets = [
   { name: "MongoDB", href: "https://quickref.me/mongodb", bgColor: "#169b48" },
 ];
 
+const DocumentationAndLearning = [
+  {
+    name: "DevDocs",
+    href: "https://devdocs.io/",
+    bgColor: "#24282b",
+  },
+  {
+    name: "MDN",
+    href: "https://developer.mozilla.org/pt-BR/",
+    bgColor: "#90b4f9",
+  },
+  {
+    name: "W3Schools",
+    href: "https://www.w3schools.com/",
+    bgColor: "#07a86d",
+  },
+  {
+    name: "FreeCodeCamp",
+    href: "https://www.freecodecamp.org/",
+    bgColor: "#1b1c31",
+  },
+];
+
 const ai = [
   {
     name: "ChatGPT",
@@ -170,6 +193,25 @@ export function MainLinks() {
               bgColor={bgColor}
             />
           ))}
+        </div>
+      </div>
+
+      <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-12">
+        <div id="cheatsheets" className="pt-8">
+          <TitleMainLinks title="Documentation and Learning" />
+        </div>
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
+          {DocumentationAndLearning.map(
+            ({ name, href, textColor, bgColor }) => (
+              <ButtonLink
+                key={name}
+                name={name}
+                href={href}
+                textColor={textColor}
+                bgColor={bgColor}
+              />
+            ),
+          )}
         </div>
       </div>
 
