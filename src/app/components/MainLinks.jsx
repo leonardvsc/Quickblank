@@ -63,6 +63,11 @@ const ai = [
     href: "https://www.logoai.com/",
     bgColor: "#275cbe",
   },
+  {
+    name: "V0",
+    href: "https://v0.dev/",
+    bgColor: "#000000",
+  },
 ];
 
 const cloudDevelopment = [
