@@ -126,6 +126,11 @@ const tailwind = [
     href: "https://tailgrids.com/",
     bgColor: "#3658f8",
   },
+  {
+    name: "KitWind",
+    href: "https://kitwind.io/",
+    bgColor: "#4d51bf",
+  },
 ];
 
 const design = [
