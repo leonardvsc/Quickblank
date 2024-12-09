@@ -128,7 +128,7 @@ const tailwind = [
   },
   {
     name: "KitWind",
-    href: "https://kitwind.io/",
+    href: "https://kitwind.io/products/",
     bgColor: "#4d51bf",
   },
 ];
