@@ -1,4 +1,5 @@
 import { RiCodeBlock, RiMindMap } from "@remixicon/react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Hero() {
@@ -12,8 +13,16 @@ export function Hero() {
         loop
         className="absolute left-0 top-0 h-full w-full object-cover opacity-5"
       ></video>
-      <div className="relative">
-        <div className="mx-auto max-w-3xl justify-center px-6 py-32 text-center lg:flex lg:h-[90vh] lg:flex-col lg:items-center">
+
+      <Image
+        src={"/image_top.webp"}
+        alt="Logo"
+        width={1920}
+        height={222}
+        className="absolute left-0 top-0 h-fit w-full object-cover"
+      />
+      <div className="">
+        <div className="mx-auto max-w-3xl justify-center px-6 py-32 text-center lg:flex lg:h-screen lg:flex-col lg:items-center">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
             <span className="block text-white">
               Sua referência para estudos!
