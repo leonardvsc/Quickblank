@@ -91,6 +91,12 @@ const ai = [
     href: "https://v0.dev/",
     bgColor: "#000000",
   },
+  {
+    name: "Lovable",
+    href: "https://lovable.dev/",
+    textColor: "#000000",
+    bgColor: "#f99e23",
+  },
 ];
 
 const cloudDevelopment = [
@@ -225,8 +231,14 @@ export function MainLinks() {
           <TitleMainLinks title="Artificial Intelligences" />
         </div>
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
-          {ai.map(({ name, href, bgColor }) => (
-            <ButtonLink key={name} name={name} href={href} bgColor={bgColor} />
+          {ai.map(({ name, href, bgColor, textColor }) => (
+            <ButtonLink
+              key={name}
+              name={name}
+              href={href}
+              bgColor={bgColor}
+              textColor={textColor}
+            />
           ))}
         </div>
       </div>
