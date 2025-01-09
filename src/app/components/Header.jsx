@@ -1,5 +1,3 @@
-"use client";
-
 import {
   RiGithubLine,
   RiInstagramLine,
@@ -7,11 +5,10 @@ import {
 } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 export function Header() {
   return (
-    <header className={`fixed top-0 z-50 w-full bg-[#292929]`}>
+    <header className="fixed top-0 z-50 w-full bg-[#292929]">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
         <Link href={"/"}>
           <Image src={"/logo.svg"} alt="Logo" width={200} height={43} />
