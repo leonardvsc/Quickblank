@@ -72,6 +72,24 @@ const ai = [
     bgColor: "#111111",
   },
   {
+    name: "DeepSeek",
+    href: "https://chat.deepseek.com",
+    textColor: "#000000",
+    bgColor: "#3f7afe",
+  },
+  {
+    name: "V0",
+    href: "https://v0.dev/",
+    bgColor: "#000000",
+  },
+  {
+    name: "Lovable",
+    href: "https://lovable.dev/",
+    textColor: "#000000",
+    bgColor: "#f99e23",
+  },
+
+  {
     name: "AI Colors",
     href: "https://aicolors.co/",
     bgColor: "#cc44a2",
@@ -85,17 +103,6 @@ const ai = [
     name: "Logo AI",
     href: "https://www.logoai.com/",
     bgColor: "#275cbe",
-  },
-  {
-    name: "V0",
-    href: "https://v0.dev/",
-    bgColor: "#000000",
-  },
-  {
-    name: "Lovable",
-    href: "https://lovable.dev/",
-    textColor: "#000000",
-    bgColor: "#f99e23",
   },
 ];
 
@@ -136,6 +143,11 @@ const tailwind = [
     name: "KitWind",
     href: "https://kitwind.io/products/",
     bgColor: "#4d51bf",
+  },
+  {
+    name: "Preline",
+    href: "https://preline.co/",
+    bgColor: "#2563ea",
   },
 ];
 
