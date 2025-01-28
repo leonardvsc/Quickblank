@@ -25,6 +25,7 @@ const cheatsheets = [
     bgColor: "#f7e018",
   },
   { name: "MongoDB", href: "https://quickref.me/mongodb", bgColor: "#169b48" },
+  { name: "PM2", href: "https://quickref.me/pm2", bgColor: "#190f4b" },
 ];
 
 const DocumentationAndLearning = [
