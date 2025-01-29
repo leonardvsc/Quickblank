@@ -131,9 +131,15 @@ const programming = [
 
 const tailwind = [
   {
-    name: "Tailwind Toolbox",
-    href: "https://www.tailwindtoolbox.com/",
-    bgColor: "#3b7976",
+    name: "Readymade UI",
+    href: "https://readymadeui.com/",
+    bgColor: "#3758f9",
+  },
+
+  {
+    name: "KitWind",
+    href: "https://kitwind.io/products/",
+    bgColor: "#4d51bf",
   },
   {
     name: "TailGrids",
@@ -141,14 +147,14 @@ const tailwind = [
     bgColor: "#3658f8",
   },
   {
-    name: "KitWind",
-    href: "https://kitwind.io/products/",
-    bgColor: "#4d51bf",
-  },
-  {
     name: "Preline",
     href: "https://preline.co/",
     bgColor: "#2563ea",
+  },
+  {
+    name: "Tailwind Toolbox",
+    href: "https://www.tailwindtoolbox.com/",
+    bgColor: "#3b7976",
   },
 ];
 
