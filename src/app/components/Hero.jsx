@@ -11,16 +11,16 @@ export function Hero() {
         playsInline
         muted
         loop
-        className="absolute left-0 top-0 h-full w-full object-cover opacity-5"
+        className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover opacity-5"
       ></video>
 
-      <Image
+      {/* <Image
         src={"/image_top.webp"}
         alt="Logo"
         width={1920}
         height={222}
         className="absolute left-0 top-0 h-fit w-full object-cover"
-      />
+      /> */}
       <div className="">
         <div className="mx-auto max-w-3xl justify-center px-6 py-32 text-center lg:flex lg:h-screen lg:flex-col lg:items-center">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
