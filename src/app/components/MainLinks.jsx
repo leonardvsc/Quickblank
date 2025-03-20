@@ -81,7 +81,7 @@ const ai = [
   {
     name: "Qwen Chat",
     href: "https://chat.qwen.ai/",
-    textColor: "#000000",
+    textColor: "#ffffff",
     bgColor: "#615CED",
   },
   {
