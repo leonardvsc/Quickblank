@@ -133,6 +133,11 @@ const programming = [
     href: "https://devresourc.es/",
     bgColor: "#111111",
   },
+  {
+    href: "https://www.better-auth.com/",
+    name: "Better Auth",
+    bgColor: "#0d1117",
+  },
 ];
 
 const tailwind = [
