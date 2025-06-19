@@ -163,7 +163,7 @@ const tailwind = [
     bgColor: "#3b7976",
   },
   {
-    name: "Tweak Colors",
+    name: "TweakCN",
     href: "https://tweakcn.com/",
     bgColor: "#1e293b",
   },
