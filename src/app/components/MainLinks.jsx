@@ -138,6 +138,11 @@ const programming = [
     name: "Better Auth",
     bgColor: "#0d1117",
   },
+  {
+    name: "DriverJS",
+    href: "https://driverjs.com/",
+    bgColor: "#f7f7f7",
+  },
 ];
 
 const tailwind = [
