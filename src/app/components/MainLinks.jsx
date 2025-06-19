@@ -162,6 +162,11 @@ const tailwind = [
     href: "https://www.tailwindtoolbox.com/",
     bgColor: "#3b7976",
   },
+  {
+    name: "Tweak Colors",
+    href: "https://tweakcn.com/",
+    bgColor: "#1e293b",
+  },
 ];
 
 const design = [
