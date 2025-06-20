@@ -141,7 +141,20 @@ const programming = [
   {
     name: "DriverJS",
     href: "https://driverjs.com/",
-    bgColor: "#f7f7f7",
+    bgColor: "#fce66c",
+    textColor: "#000000",
+  },
+  {
+    name: "React Just Parallax",
+    href: "https://react-just-parallax.michalzalobny.com/",
+    bgColor: "#afa3e1",
+    textColor: "#000000",
+  },
+  {
+    href: "https://reactbits.dev/",
+    name: "React Bits",
+    bgColor: "#000000",
+    textColor: "#f7f7f7",
   },
 ];
 
