@@ -143,7 +143,7 @@ const LINKS_DATA = {
     title: "Programming",
     items: [
       {
-        name: "KodeKloud Free Lab",
+        name: "KodeKloud Free Labs",
         href: "https://kodekloud.com/pages/free-labs/",
         bgColor: "#1ab7fd",
       },
