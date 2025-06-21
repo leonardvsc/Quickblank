@@ -2,6 +2,7 @@ const links = [
   { name: "Cheatsheets", href: "#cheatsheets" },
   { name: "Artificial Intelligences", href: "#ai" },
   { name: "Programming", href: "#programming" },
+  { name: "Tailwind CSS", href: "#tailwind" },
   { name: "Design", href: "#design" },
   { name: "Toolkit", href: "#toolkit" },
 ];
